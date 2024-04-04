@@ -1,0 +1,36 @@
+* {
+    border: 1px solid red;
+    color: whitesmoke;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-size: 40pt;
+    padding: 15px;
+}
+
+.main_content {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+
+#left_content {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 50vw;
+    padding: 50px;
+}
+
+#right_content {
+    height: 300vh;
+    width: 50vw;
+    padding: 50px;
+    font-size: 16pt;
+}
