@@ -1,19 +1,27 @@
 * {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     color: whitesmoke;
     margin: 0px;
     padding: 0px;
 }
 
+body {
+    background-color: black;
+}
+
 h1 {
     font-size: 40pt;
-    padding: 15px;
+    padding-bottom: 15px;
+}
+h3 {
+    padding-bottom: 15px;
 }
 
 .main_content {
     display: flex;
     flex-direction: row;
-    background-color: black;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 #left_content {
@@ -21,11 +29,12 @@ h1 {
     top: 0px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
     height: 100vh;
     width: 50vw;
     padding: 50px;
+
 }
 
 #right_content {
@@ -33,4 +42,10 @@ h1 {
     width: 50vw;
     padding: 50px;
     font-size: 16pt;
+}
+
+#personal_links {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
 }
