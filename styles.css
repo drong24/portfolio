@@ -3,6 +3,7 @@
     color: black;
     margin: 0px;
     padding: 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -13,15 +14,19 @@ h1 {
     font-size: 50pt;
     padding-bottom: 5px;
 }
+h2 {
+    margin-top: 30px;
+}
 h3 {
     font-size: 16pt;
     padding-bottom: 40px;
 }
 li {
-    list-style:none;
+    list-style: square;
 }
 li a {
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0);
+    font-size: 14pt;
 }
 
 .main_content {
@@ -55,8 +60,9 @@ li a {
     margin-top: 100px;
     display: flex;
     justify-content: center;
+    margin-top: 25vh;
 }
 
 .active {
-    color: black;
+    font-weight: 900;
 }
