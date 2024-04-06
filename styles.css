@@ -1,20 +1,27 @@
 * {
     /*border: 1px solid red;*/
-    color: whitesmoke;
+    color: black;
     margin: 0px;
     padding: 0px;
 }
 
 body {
-    background-color: black;
+    background-color: peachpuff;
 }
 
 h1 {
-    font-size: 40pt;
-    padding-bottom: 15px;
+    font-size: 50pt;
+    padding-bottom: 5px;
 }
 h3 {
-    padding-bottom: 15px;
+    font-size: 16pt;
+    padding-bottom: 40px;
+}
+li {
+    list-style:none;
+}
+li a {
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .main_content {
@@ -48,4 +55,8 @@ h3 {
     margin-top: 100px;
     display: flex;
     justify-content: center;
+}
+
+.active {
+    color: black;
 }
