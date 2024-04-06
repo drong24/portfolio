@@ -1,5 +1,5 @@
 
-
+// highlights nav to scroll location
 window.addEventListener('scroll', () => {
     let aboutY = document.getElementById("about");
     let projectsY = document.getElementById("projects");
