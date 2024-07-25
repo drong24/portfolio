@@ -67,3 +67,8 @@ li a {
 .active {
     font-weight: 900;
 }
+
+.project_list {
+    display: flex;
+    flex-direction: column;
+}
