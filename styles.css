@@ -5,10 +5,7 @@
     padding: 0px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-body {
-    background-color: peachpuff;
-}
+/*
 
 h1 {
     font-size: 50pt;
@@ -71,4 +68,68 @@ li a {
 .project_list {
     display: flex;
     flex-direction: column;
+}
+*/
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+@media (min-width: 992px) {
+    .nav_bar {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        height: 100vh;
+        width: 18rem;
+        background-color: peru;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .nav_img {
+        padding: 2.5rem;
+    }
+
+    .nav_items {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav_items ul li {
+        padding: 1rem;
+    }
+    .nav_items ul li a {
+        /*color: white;*/
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .personal_links {
+        padding-top: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #right_content {
+        padding-left: 22rem;
+    }
+}
+
+.img_profile {
+    max-width: 12rem;
+    max-height: 12rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
 }
