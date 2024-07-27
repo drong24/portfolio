@@ -1,5 +1,5 @@
 * {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     color: black;
     margin: 0px;
     padding: 0px;
@@ -75,6 +75,18 @@ ul {
     list-style-type: none;
 }
 
+h1 {
+    font-size: 5rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+p {
+    color: rgb(106, 105, 105);
+}
+
 @media (min-width: 992px) {
     .nav_bar {
         position: fixed;
@@ -141,4 +153,17 @@ ul {
 
 .active {
     font-weight: 900;
+}
+
+.margin-b {
+    margin-bottom: 30px;
+}
+
+.content_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5rem;
+    padding-right: 4rem;
+    background-color: aliceblue;
 }
