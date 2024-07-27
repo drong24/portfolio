@@ -1,5 +1,5 @@
 * {
-    /*border: 1px solid red;*/
+    border: 1px solid red;
     color: black;
     margin: 0px;
     padding: 0px;
@@ -61,10 +61,6 @@ li a {
     margin-top: 25vh;
 }
 
-.active {
-    font-weight: 900;
-}
-
 .project_list {
     display: flex;
     flex-direction: column;
@@ -111,8 +107,8 @@ ul {
         padding: 1rem;
     }
     .nav_items ul li a {
-        /*color: white;*/
-        font-weight: 600;
+        /*color: white;
+        font-weight: 600;*/
         font-size: 20px;
     }
 
@@ -137,4 +133,12 @@ ul {
 
 .dis_none {
     display: none;
+}
+
+.vh-100 {
+    height: 100vh;
+}
+
+.active {
+    font-weight: 900;
 }
