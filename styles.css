@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
 }
 /*
 
@@ -76,11 +77,12 @@ ul {
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 4rem;
+    margin-bottom: 3rem;
 }
 
 h3 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
 }
 
 p {
@@ -95,7 +97,7 @@ p {
         bottom: 0;
         height: 100vh;
         width: 18rem;
-        background-color: peru;
+        background-color: rgb(180, 97, 38);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -116,7 +118,7 @@ p {
     }
 
     .nav_items ul li {
-        padding: 1rem;
+        padding: .75rem;
     }
     .nav_items ul li a {
         /*color: white;
@@ -133,13 +135,17 @@ p {
 
     #right_content {
         padding-left: 22rem;
+        padding-top: 12rem;
     }
+}
+#right_content {
+    background-color: aliceblue;
 }
 
 .img_profile {
     max-width: 12rem;
     max-height: 12rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    border: .5rem solid rgba(255, 255, 255, 0.2);
     border-radius: 50%;
 }
 
@@ -148,22 +154,91 @@ p {
 }
 
 .vh-100 {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .active {
     font-weight: 900;
 }
 
-.margin-b {
+.margin-b-30 {
     margin-bottom: 30px;
+}
+
+.margin-b-100 {
+    margin-bottom: 100px;
+}
+
+.margin-t-2 {
+    margin-top: 2rem;
+}
+
+.margin-r-30 {
+    margin-right: 30px;
+}
+
+.fs-20 {
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .content_item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     padding-left: 5rem;
     padding-right: 4rem;
-    background-color: aliceblue;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.grid > div {
+    flex: 1 1 150px;
+    text-align: center;
+}
+
+.bg-shadow {
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 5rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-c {
+    display: flex;
+    flex-direction: column;
+}
+
+.img_icon {
+    height: 100px;
+    width: 100px;
+}
+
+.img_icon-l {
+    height: 200px;
+    width: 200px;
+}
+
+form > input {
+    height: 2rem;
+    padding: 10px;
+}
+form > textarea {
+    padding: 10px;
+    height: 15rem;
+}
+form > button {
+    width: 200px;
+    height: 45px;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
 }
