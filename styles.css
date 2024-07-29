@@ -28,12 +28,7 @@ li a {
 }
 
 
-.main_content {
-    display: flex;
-    flex-direction: row;
-    margin-left: 10vw;
-    margin-right: 10vw;
-}
+
 
 #left_content {
     position: sticky;
@@ -103,6 +98,7 @@ p {
         justify-content: center;
         align-items: center;
         padding: 2rem;
+        z-index: 1001;
     }
 
     .nav_img {
@@ -135,11 +131,16 @@ p {
 
     #right_content {
         padding-left: 22rem;
+    }
+
+    #about {
         padding-top: 12rem;
     }
 }
+
+
 #right_content {
-    background-color: aliceblue;
+    /*background-color: aliceblue;*/
 }
 
 .img_profile {
@@ -215,6 +216,14 @@ p {
     flex-direction: column;
 } 
 
+.a-bg {
+    position: absolute;
+    min-height: 90vh;
+    min-width: 100vw;
+    background-color: rgba(255, 160, 122, 0.2);
+    z-index: -1;
+}
+
 .href-button {
     display: flex;
     align-items: center;
@@ -258,14 +267,6 @@ form > button {
     border-radius: 15px;
     background-color: black;
     color: white;
-}
-
-.t-slider {
-
-}
-
-@keyframes slideLeft {
-
 }
 
 .h-large {

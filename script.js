@@ -1,16 +1,31 @@
 
 // highlights nav to scroll location
 window.addEventListener('scroll', () => {
+    let scrollTop = window.scrollY; 
+    /*
     let about = document.getElementById("about");
     let projects = document.getElementById("projects");
     let skills = document.getElementById("skills");
     let education = document.getElementById("education");
     let contact = document.getElementById("contact");
-    let scrollTop = window.scrollY; 
+
+    const links = document.querySelectorAll('nav > ul > li > a');
+    */
+
+    changeActiveNav(scrollTop);
+    addSlideAnimation(scrollTop);
+
+});
+
+// changes active nav item depending on scroll location
+function changeActiveNav(scrollTop) {
+    let about = document.getElementById("about");
+    let projects = document.getElementById("projects");
+    let skills = document.getElementById("skills");
+    let education = document.getElementById("education");
+    let contact = document.getElementById("contact");
     const links = document.querySelectorAll('nav > ul > li > a');
 
-    //console.log(window.scrollY);
-    //console.log(document.getElementById("about").offsetTop);
     if (scrollTop >= about.offsetTop && scrollTop < projects.offsetTop) {
         links[0].classList.add("active");
         links[1].classList.remove("active");
@@ -46,4 +61,14 @@ window.addEventListener('scroll', () => {
         links[3].classList.remove("active");
         links[4].classList.add("active");
     }
-});
+}
+
+function addSlideAnimation(scrollTop) {
+    var scrollBottom = scrollTop + window.innerHeight;
+    projects = document.querySelector(".project_list").children;
+    //console.log(projects[0]);
+    console.log(scrollTop + " --- " + scrollBottom);
+    for (let i = 0; i < projects.length; i++) {
+        projects[i].style = `margin-left: max(calc( ${projects[i].offsetTop}px - ${scrollTop}px - 400px), 0px)`;
+    }
+}
