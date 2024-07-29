@@ -213,6 +213,17 @@ p {
 .flex-c {
     display: flex;
     flex-direction: column;
+} 
+
+.href-button {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    width: 150px;
 }
 
 .img_icon {
@@ -220,9 +231,15 @@ p {
     width: 100px;
 }
 
-.img_icon-l {
+.img_icon_l {
     height: 200px;
     width: 200px;
+}
+
+.img_icon_s {
+    height: 30px;
+    width: 30px;
+    filter: invert(100%);
 }
 
 form > input {
@@ -241,4 +258,20 @@ form > button {
     border-radius: 15px;
     background-color: black;
     color: white;
+}
+
+.t-slider {
+
+}
+
+@keyframes slideLeft {
+
+}
+
+.h-large {
+    transition: .5s;
+}
+
+.h-large:hover {
+    transform: translate(0px) scale(1.25) translateZ(0px);
 }

@@ -16,34 +16,34 @@ window.addEventListener('scroll', () => {
         links[1].classList.remove("active");
         links[2].classList.remove("active");
         links[3].classList.remove("active");
-        links[3].classList.remove("active");
+        links[4].classList.remove("active");
     }
     if (scrollTop >= projects.offsetTop && scrollTop < skills.offsetTop) {
         links[0].classList.remove("active");
         links[1].classList.add("active");
         links[2].classList.remove("active");
         links[3].classList.remove("active");
-        links[3].classList.remove("active");
+        links[4].classList.remove("active");
     }
     if (scrollTop >= skills.offsetTop && scrollTop < education.offsetTop) {
         links[0].classList.remove("active");
         links[1].classList.remove("active");
         links[2].classList.add("active");
         links[3].classList.remove("active");
-        links[3].classList.remove("active");
+        links[4].classList.remove("active");
     }
     if (scrollTop >= education.offsetTop && scrollTop < contact.offsetTop) {
         links[0].classList.remove("active");
         links[1].classList.remove("active");
         links[2].classList.remove("active");
         links[3].classList.add("active");
-        links[3].classList.remove("active");
+        links[4].classList.remove("active");
     }
     if (scrollTop >= contact.offsetTop) {
         links[0].classList.remove("active");
         links[1].classList.remove("active");
         links[2].classList.remove("active");
         links[3].classList.remove("active");
-        links[3].classList.add("active");
+        links[4].classList.add("active");
     }
 });
