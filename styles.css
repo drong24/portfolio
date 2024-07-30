@@ -1,6 +1,6 @@
 * {
     /*border: 1px solid red;*/
-    color: black;
+    color: whitesmoke;
     margin: 0px;
     padding: 0px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -178,6 +178,10 @@ p {
     font-weight: 700;
 }
 
+.fs-link {
+    color: blue;
+}
+
 .content_item {
     display: flex;
     flex-direction: column;
@@ -212,10 +216,10 @@ p {
 } 
 
 .a-bg {
+    background: hsla(260,40%,5%,1);
     position: absolute;
     min-height: 90vh;
     min-width: 100vw;
-    background-color: rgba(255, 160, 122, 0.2);
     z-index: -1;
 }
 

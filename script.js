@@ -66,9 +66,9 @@ function changeActiveNav(scrollTop) {
 function addSlideAnimation(scrollTop) {
     var scrollBottom = scrollTop + window.innerHeight;
     projects = document.querySelector(".project_list").children;
-    //console.log(projects[0]);
-    console.log(scrollTop + " --- " + scrollBottom);
     for (let i = 0; i < projects.length; i++) {
-        projects[i].style = `margin-left: max(calc( ${projects[i].offsetTop}px - ${scrollTop}px - 400px), 0px)`;
+        let bgOpacity = Math.min(Math.max((scrollTop - projects[i].offsetTop + 700) * 0.001, 0), 0.25);
+        projects[i].style = `margin-left: max(calc( ${projects[i].offsetTop}px - ${scrollTop}px - 400px), 0px);
+        background-color: rgba(0, 0, 0, ${bgOpacity});`;        
     }
 }
