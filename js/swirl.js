@@ -16,7 +16,7 @@ const noiseSteps = 8;
 const xOff = 0.00125;
 const yOff = 0.00125;
 const zOff = 0.0005;
-const backgroundColor = 'hsla(260,40%,5%,1)';
+const backgroundColor = 'burlywood';
 
 let container;
 let canvas;
@@ -135,11 +135,13 @@ function createCanvas() {
 		b: document.createElement('canvas')
 	};
 	canvas.b.style = `
-		position: fixed;
+		position: inherit;
+    /*
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
+    */
 	`;
 	container.appendChild(canvas.b);
 	ctx = {
@@ -153,7 +155,7 @@ function resize() {
 	const { innerWidth, innerHeight } = window;
 	
 	canvas.a.width = innerWidth;
-  canvas.a.height = innerHeight;
+  canvas.a.height = innerHeight - 90;
 
   ctx.a.drawImage(canvas.b, 0, 0);
 
