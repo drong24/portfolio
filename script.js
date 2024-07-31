@@ -63,8 +63,8 @@ function changeActiveNav(scrollTop) {
     }
 }
 
+// adds slide animation for projects
 function addSlideAnimation(scrollTop) {
-    var scrollBottom = scrollTop + window.innerHeight;
     projects = document.querySelector(".project_list").children;
     for (let i = 0; i < projects.length; i++) {
         let bgOpacity = Math.min(Math.max((scrollTop - projects[i].offsetTop + 700) * 0.001, 0), 0.25);

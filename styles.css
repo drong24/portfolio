@@ -10,62 +10,6 @@
 body {
     background-color: aliceblue;
 }
-/*
-
-h1 {
-    font-size: 50pt;
-    padding-bottom: 5px;
-}
-h2 {
-    margin-top: 30px;
-}
-h3 {
-    font-size: 16pt;
-    padding-bottom: 40px;
-}
-li {
-    list-style: square;
-}
-li a {
-    color: rgba(0, 0, 0);
-    font-size: 14pt;
-}
-
-
-
-
-#left_content {
-    position: sticky;
-    top: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    height: 100vh;
-    width: 50vw;
-    padding: 50px;
-
-}
-
-#right_content {
-    height: 300vh;
-    width: 50vw;
-    padding: 50px;
-    font-size: 16pt;
-}
-
-#personal_links {
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    margin-top: 25vh;
-}
-
-.project_list {
-    display: flex;
-    flex-direction: column;
-}
-*/
 
 a {
     text-decoration: none;
@@ -86,6 +30,11 @@ h3 {
 
 p {
     color: rgb(106, 105, 105);
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    cursor: pointer;
 }
 
 @media (min-width: 992px) {
@@ -246,6 +195,10 @@ p {
     background-color: black;
     color: white;
     width: 150px;
+}
+
+.href-button:hover {
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .img_icon {
