@@ -136,10 +136,16 @@ p {
     #right_content {
         padding-left: 22rem;
     }
+}
 
-    #about {
-        padding-top: 12rem;
+@media (max-width: 992px) {
+    .dis_none {
+        display: none;
     }
+}
+
+#about {
+    padding-top: 12rem;
 }
 
 #about > h1, #about > h3 {
@@ -151,10 +157,6 @@ p {
     max-height: 12rem;
     border: .5rem solid rgba(255, 255, 255, 0.2);
     border-radius: 50%;
-}
-
-.dis_none {
-    display: none;
 }
 
 .vh-100 {
