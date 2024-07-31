@@ -167,9 +167,10 @@
                 <h1>Contact Me!</h1>
                 <div>
                     <p class="margin-b-30">Please contact me directly at daisyrong24@gmail.com or through this form.</p>
-                    <form class="flex-c" action="">
-                        <input class="margin-b-30" type="email" maxlength="100" placeholder="Your email" name="email">
-                        <textarea class="margin-b-30" name="message" maxlength="5000" placeholder="Your message"></textarea>
+                    <form class="flex-c" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="5635d66e-3caa-45e9-b0f9-c909a0d2c655">
+                        <input class="margin-b-30" type="email" maxlength="100" placeholder="Your email" name="email" required>
+                        <textarea class="margin-b-30" name="message" maxlength="5000" placeholder="Your message" required></textarea>
                         <button type="submit">Submit</button>
                     </form>
                 </div>

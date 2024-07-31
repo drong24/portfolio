@@ -2,15 +2,6 @@
 // highlights nav to scroll location
 window.addEventListener('scroll', () => {
     let scrollTop = window.scrollY; 
-    /*
-    let about = document.getElementById("about");
-    let projects = document.getElementById("projects");
-    let skills = document.getElementById("skills");
-    let education = document.getElementById("education");
-    let contact = document.getElementById("contact");
-
-    const links = document.querySelectorAll('nav > ul > li > a');
-    */
 
     changeActiveNav(scrollTop);
     addSlideAnimation(scrollTop);
