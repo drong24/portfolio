@@ -3,7 +3,7 @@
 const particleCount = 700;
 const particlePropCount = 9;
 const particlePropsLength = particleCount * particlePropCount;
-const rangeY = 100;
+const rangeY = 80;
 const baseTTL = 50;
 const rangeTTL = 150;
 const baseSpeed = 0.1;
@@ -135,13 +135,11 @@ function createCanvas() {
 		b: document.createElement('canvas')
 	};
 	canvas.b.style = `
+    width: 100%;
 		position: inherit;
-    /*
 		top: 0;
 		left: 0;
-		width: 100%;
 		height: 100%;
-    */
 	`;
 	container.appendChild(canvas.b);
 	ctx = {
@@ -152,15 +150,16 @@ function createCanvas() {
 }
 
 function resize() {
-	const { innerWidth, innerHeight } = window;
-	
+	const { innerWidth, innerHeight} = window;
+  let navWidth = document.querySelector(".nav_bar").offsetWidth;
+  
 	canvas.a.width = innerWidth;
   canvas.a.height = innerHeight - 90;
 
   ctx.a.drawImage(canvas.b, 0, 0);
 
 	canvas.b.width = innerWidth;
-  canvas.b.height = innerHeight;
+  canvas.b.height = innerHeight - 90;
   
   ctx.b.drawImage(canvas.a, 0, 0);
 
@@ -205,4 +204,4 @@ function draw() {
 }
 
 window.addEventListener('load', setup);
-window.addEventListener('resize', resize);
+//window.addEventListener('resize', resize);

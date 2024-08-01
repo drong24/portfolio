@@ -119,6 +119,7 @@ button:hover {
 
 .active {
     font-weight: 900;
+    text-decoration: underline;
 }
 
 .margin-b-30 {
@@ -244,4 +245,8 @@ form > button {
 
 .h-large:hover {
     transform: translate(0px) scale(1.25) translateZ(0px);
+}
+
+.project_list > div {
+    width: 40vw;
 }
