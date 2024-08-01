@@ -59,7 +59,7 @@ function addSlideAnimation(scrollTop) {
     projects = document.querySelector(".project_list").children;
     for (let i = 0; i < projects.length; i++) {
         let bgOpacity = Math.min(Math.max((scrollTop - projects[i].offsetTop + 700) * 0.002, 0), 1);
-        let projectMarginL = Math.min(Math.max(projects[i].offsetTop - scrollTop - 200, 0), 300);
+        let projectMarginL = Math.min(Math.max(projects[i].offsetTop - scrollTop - 300, 0), 300);
         projects[i].style = `opacity: ${bgOpacity};
         margin-left: ${projectMarginL}px;`;   
     }
