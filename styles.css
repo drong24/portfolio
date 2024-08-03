@@ -248,5 +248,5 @@ form > button {
 }
 
 .project_list > div {
-    width: 40vw;
+    max-width: 40vw;
 }

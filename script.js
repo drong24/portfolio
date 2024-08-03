@@ -64,3 +64,8 @@ function addSlideAnimation(scrollTop) {
         margin-left: ${projectMarginL}px;`;   
     }
 }
+
+// shows success message on submit button click 
+function showSuccessMessage() {
+    alert("Message sent.");
+}
