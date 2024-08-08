@@ -9,15 +9,8 @@
 
 <center>
 
-<p>Portfolio site for Daisy Rong</p>
+<p>My portfolio to showcase a my projects. Built with base Javascript, HTML, and CSS.</p>
 
 </center>
-
-<h3 align="center">
-    🔹
-    <a href="https://github.com/soumyajit4419/Portfolio/issues">Report Bug</a> &nbsp; &nbsp;
-    🔹
-    <a href="https://github.com/soumyajit4419/Portfolio/issues">Request Feature</a>
-</h3>
 
 # portfolio
