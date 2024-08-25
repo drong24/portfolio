@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div id="about">
+            <div class="header">
+                <a href="./Daisy Rong Resume.pdf">View Resume in PDF</a>
+                <div class="personal_links">
+                    <a href="https://github.com/drong24"><img src="./images/icons8-github-50.png" alt=""></a>
+                    <a href="https://linkedin.com/in/drong24"><img src="./images/icons8-linkedin-50.png" alt=""></a>
+                </div>
+            </div>
+            <ul class="nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li>Skills</li>
+                <li>Education</li>
+                <li>Contact</li>
+            </ul>
+            <h1>Daisy Rong</h1>
+            <p>Computer Science student graduating December 2024. I like to code in Java and Javascript.</p>
+            <img src="./images/auburn.jpeg" alt="">
+        </div>
+        <div id="projects">
+            <div class="bg-shadow margin-b-30">
+                <h3>TCPClientServerCalculator</h3>
+                <h4 class="margin-b-30">Skills used: Java</h4>
+                <p class="margin-b-30">
+                    Implementation of a remote Calculating Server. 
+                    This calculating server performs bitwise Boolean and arithmetic computations requested by a clients.
+                </p>
+                <a class="href-button" href="https://github.com/drong24/TCPClientServerCalculator">
+                    <img class="img_icon_s margin-r-30" src="./images/icons8-github-50.png" alt=""> 
+                    Github
+                </a>
+            </div>
+            <div class="bg-shadow margin-b-30">
+                <h3>Bookstore-Webapp</h3>
+                <h4 class="margin-b-30">Skills used: Javascript, HTML, CSS, PHP, Ajax, SQL, SQL Server</h4>
+                <p class="margin-b-30">
+                    A sliding puzzle game consisting of a 4x4 grid of numbered tiles with one tile missing. The objective is to arrange the tiles 
+                    in numerical order using the empty space to move tiles.
+                </p>
+                <div class="flex">
+                    <a class="href-button margin-r-30" href="https://github.com/drong24/Bookstore-Webapp">
+                        <img class="img_icon_s margin-r-30" src="./images/icons8-github-50.png" alt="">
+                        Github
+                    </a>
+                    <!--
+                        <a class="href-button" href="https://github.com/drong24/FifteenPuzzle">
+                        <img class="img_icon_s margin-r-30" src="./images/icons8-link-50.png" alt="">
+                        Live
+                    </a>
+                    -->
+                </div>
+            </div>
+            <div class="bg-shadow margin-b-30">
+                <h3>FifteenPuzzle</h3>
+                <h4 class="margin-b-30">Skills used: Javascript, HTML, CSS</h4>
+                <p class="margin-b-30">
+                    A sliding puzzle game consisting of a 4x4 grid of numbered tiles with one tile missing. The objective is to arrange the tiles 
+                    in numerical order using the empty space to move tiles.
+                </p>
+                <a class="href-button" href="https://github.com/drong24/FifteenPuzzle">
+                    <img class="img_icon_s margin-r-30" src="./images/icons8-github-50.png" alt=""> 
+                    Github
+                </a>
+            </div>
+            <div class="bg-shadow margin-b-100">
+                <h3>MorgagePayment</h3>
+                <h4 class="margin-b-30">Skills used: Swift, XCode</h4>
+                <p class="margin-b-30">
+                    IOS app used to calculate morgage payments.
+                </p>
+                <a class="href-button" href="https://github.com/drong24/MorgagePayment">
+                    <img class="img_icon_s margin-r-30" src="./images/icons8-github-50.png" alt=""> 
+                    Github
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    * {
+        padding: 0px;
+        margin: 0px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    body {
+        width: 100%;
+        background-color: whitesmoke;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    h1 {
+        font-size: 13vw;
+    }
+    ul > li {
+        list-style: none;
+    }
+    .main {
+        width: 100%;
+    }
+
+    /* about section styling */
+    #about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #about > img {
+        width: 300px;
+    }
+    #about > p {
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+    .personal_links > a > img {
+        width: 35px;
+    }
+    .nav {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        margin-bottom: 50px;
+        width: 90%;
+    }
+
+    /* projects section styling */
+    #projects {
+        display: flex;
+        flex-wrap: wrap;
+    }
+</style>
+</html>

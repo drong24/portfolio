@@ -9,7 +9,14 @@
 
 <center>
 
-<p>My portfolio to showcase a my projects. Built with base Javascript, HTML, and CSS.</p>
+<p>Portfolio to showcase a my projects. Built with base Javascript, HTML, and CSS.</p>
+</br>
+</br>
+<p>Background by to AmbientCanvasBackgrounds by Manoela Ilic</p>
+<p>https://github.com/crnacura/AmbientCanvasBackgrounds</p>
+</br>
+<p>Contact form uses Web3Form API</p>
+<p>https://web3forms.com/</p>
 
 </center>
 
