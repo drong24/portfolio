@@ -19,14 +19,29 @@
             <ul class="nav">
                 <li><a class="nav_a" href="#about">About</a></li>
                 <li><a class="nav_a" href="#projects">Projects</a></li>
-                <li><a class="nav_a" href="">Skills</a></li>
-                <li><a class="nav_a" href="">Education</a></li>
+                <li><a class="nav_a" href="#skills">Skills</a></li>
+                <li><a class="nav_a" href="#education">Education</a></li>
                 <li><a class="nav_a" href="#contact">Contact</a></li>
             </ul>
             <h1>Daisy Rong</h1>
             <div class="about_description"> 
                 <p>Computer Science student graduating December 2024. I like to code in Java and Javascript. A big fan of barley green tea.</p>
                 <img src="./tea.gif" alt="">
+            </div>
+        </div>
+        <div id="skills" class="content_item">
+            <h2>Skills</h2>
+            <div class="skill_list">
+                <div>
+                    <h3>Languages:</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>Javascript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>PHP</li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div id="projects" class="content_item">
@@ -45,13 +60,16 @@
                 </div>
             </div>
         </div>
+        <div id="education" class="content_item">
+
+        </div>
         <div id="contact" class="content_item">
-            <h2>Contact Me!</h2>
+            <h2>Contact Me</h2>
             <div>
                 <p class="contact_info">Please contact me directly at daisyrong24@gmail.com or through this form.</p>
                 <form class="contact_form" action="https://api.web3forms.com/submit" method="POST">
                     <input type="hidden" name="redirect" value="https://drong24.github.io/portfolio/">
-                    <input type="hidden" name="access_key" value="5635d66e-3caa-45e9-b0f9-c909a0d2c655">
+                    <!--<input type="hidden" name="access_key" value="5635d66e-3caa-45e9-b0f9-c909a0d2c655">-->
                     <input class="contact_form_name" type="email" maxlength="100" placeholder="Your email" name="email" required>
                     <textarea class="contact_form_message" name="message" maxlength="5000" placeholder="Your message" required></textarea>
                     <button type="submit" onclick="showSuccessMessage()">Submit</button>
@@ -65,6 +83,9 @@
         padding: 0px;
         margin: 0px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    html {
+        scroll-behavior: smooth;
     }
     body {
         width: 100%;
@@ -187,7 +208,14 @@
     }
 
     /* Skills Section Styling */
-
+    .skill_list {
+        display: flex;
+    }
+    .skill_list > div > ul > li {
+        border: 1px solid black;
+        padding: 3px;
+        margin: 1px;
+    }
 
     /* Contact Section Styling */
     .content_item {
