@@ -21,7 +21,7 @@
                 <li><a class="nav_a" href="#projects">Projects</a></li>
                 <li><a class="nav_a" href="">Skills</a></li>
                 <li><a class="nav_a" href="">Education</a></li>
-                <li><a class="nav_a" href="">Contact</a></li>
+                <li><a class="nav_a" href="#contact">Contact</a></li>
             </ul>
             <h1>Daisy Rong</h1>
             <div class="about_description"> 
@@ -29,7 +29,7 @@
                 <img src="./tea.gif" alt="">
             </div>
         </div>
-        <div id="projects">
+        <div id="projects" class="content_item">
             <h2>Projects</h2>
             <div class="project_list">
                 <a href="#about" class="project_item">
@@ -37,31 +37,25 @@
                     <p>Vacation and travel planning app. Utilizes Google Maps API, Routes API, and Places API.</p>
                     <p>Skills Used: Javascript, HTML, CSS</p>
                 </a>
-                <a href="#about" class="project_item">
-                    Traveler's Path
+                <div class="project_item">
+                    <h3>Pather</h3>
                     <p>Vacation and travel planning app. Utilizes Google Maps API, Routes API, and Places API.</p>
                     <p>Skills Used: Javascript, HTML, CSS</p>
-                </a>
-                <a href="#about" class="project_item">
-                    Pather
-                    <p>Vacation and travel planning app. Utilizes Google Maps API, Routes API, and Places API.</p>
-                    <p>Skills Used: Javascript, HTML, CSS</p>
-                </a>
-                <a href="#about" class="project_item">
-                    Pather
-                    <p>Vacation and travel planning app. Utilizes Google Maps API, Routes API, and Places API.</p>
-                    <p>Skills Used: Javascript, HTML, CSS</p>
-                </a>
-                <a href="#about" class="project_item">
-                    Pather
-                    <p>Vacation and travel planning app. Utilizes Google Maps API, Routes API, and Places API.</p>
-                    <p>Skills Used: Javascript, HTML, CSS</p>
-                </a>
-                <a href="#about" class="project_item">
-                    Pather
-                    <p>Vacation and travel planning app. Utilizes Google Maps API, Routes API, and Places API.</p>
-                    <p>Skills Used: Javascript, HTML, CSS</p>
-                </a>
+                    <button>Github</button>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="content_item">
+            <h2>Contact Me!</h2>
+            <div>
+                <p class="contact_info">Please contact me directly at daisyrong24@gmail.com or through this form.</p>
+                <form class="contact_form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="redirect" value="https://drong24.github.io/portfolio/">
+                    <input type="hidden" name="access_key" value="5635d66e-3caa-45e9-b0f9-c909a0d2c655">
+                    <input class="contact_form_name" type="email" maxlength="100" placeholder="Your email" name="email" required>
+                    <textarea class="contact_form_message" name="message" maxlength="5000" placeholder="Your message" required></textarea>
+                    <button type="submit" onclick="showSuccessMessage()">Submit</button>
+                </form>
             </div>
         </div>
     </div>
@@ -95,7 +89,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 100vh;
+        min-height: 100vh;
     }
     #about > p {
         margin-top: 5px;
@@ -175,8 +169,7 @@
         }
     }
     #projects {
-        padding: 80px;
-        height: 100vh;
+        min-height: 100vh;
     }
     .project_list {
         display: grid;
@@ -189,6 +182,48 @@
         min-height: 220px;
     }
 
+    .project_item > h3 {
+        margin-bottom: 30px;
+    }
+
     /* Skills Section Styling */
+
+
+    /* Contact Section Styling */
+    .content_item {
+        padding: 5%;
+    }
+    #contact > h2 {
+        margin-bottom: 30px;
+    }
+    .contact_info {
+        margin-bottom: 30px;
+    }
+    .contact_form {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact_form_name {
+        margin-bottom: 30px;
+        min-height: 17pt;
+        padding: 9px;
+        font-size: 12pt;
+    }
+    .contact_form_message {
+        min-height: 200pt;
+        padding: 7px;
+        margin-bottom: 30px;
+        font-size: 12pt;
+    }
+    .contact_form > button {
+        width: 150px;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: black;
+        color: white;
+        font-weight: 900;
+    }
+
+
 </style>
 </html>
