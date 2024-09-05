@@ -31,18 +31,53 @@
         </div>
         <div id="skills" class="content_item">
             <h2>Skills</h2>
-            <div class="skill_list">
-                <div>
-                    <h3>Languages:</h3>
-                    <ul>
-                        <li>Java</li>
-                        <li>Javascript</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>PHP</li>
-                    </ul>
+            <div class="grid">
+                <div class="skill_item">
+                    <img src="./images/icons8-java-100.png" alt="">
+                    <p>Java</p>
+                </div>
+                <div class="skill_item">
+                    <img src="./images/icons8-javascript-100.png" alt="">
+                    <p>Javascript</p>
+                </div>
+                <div class="skill_item">
+                    <img src="./images/icons8-html-100.png" alt="">
+                    <p>HTML</p>
+                </div>
+                <div class="skill_item">
+                    <img src="./images/icons8-css-100.png" alt="">
+                    <p>CSS</p>
+                </div>
+                <div class="skill_item">
+                    <img src="./images/icons8-php-100.png" alt="">
+                    <p>PHP</p>
+                </div>
+                <div class="skill_item">
+                    <img src="./images/icons8-swift-100.png" alt="">
+                    <p >Swift</p>
+                </div>
+                <div class="skill_item">
+                    <img src="./images/icons8-git-100.png" alt="">
+                    <p>Git</p>
+                </div>
+                <div class="skill_item">
+                    <img src="./images/icons8-visual-studio-100.png" alt="">
+                    <p>Visual Studio</p>
+                </div>
+                <div class="skill_item">
+                    <img src="./images/icons8-vs-code-100.png" alt="">
+                    <p>VSCode</p>
+                </div>
+                <div class="skill_item">
+                    <img src="./images/icons8-sql-100.png" alt="">
+                    <p>SQL</p>
+                </div>
+                <div class="skill_item">
+                    <img src="./images/icons8-mysql-100.png" alt="">
+                    <p>MySQL</p>
                 </div>
             </div>
+        </div>
         </div>
         <div id="projects" class="content_item">
             <h2>Projects</h2>
@@ -208,13 +243,24 @@
     }
 
     /* Skills Section Styling */
-    .skill_list {
-        display: flex;
+    #skills > h2 {
+        margin-bottom: 30px;
     }
-    .skill_list > div > ul > li {
-        border: 1px solid black;
-        padding: 3px;
-        margin: 1px;
+    .grid {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        justify-items: center;
+    }
+    .skill_item {
+        padding: 15px;
+    }
+    .skill_item > img {
+        max-width: 80px;
+        max-height: 80px;
+        margin-bottom: 10px;
+    }
+    .skill_item > p {
+        text-align: center;
     }
 
     /* Contact Section Styling */
