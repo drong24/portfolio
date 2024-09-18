@@ -83,13 +83,18 @@
             <h2>Projects</h2>
             <div class="project_list">
                 <a href="#about" class="project_item">
-                    Pather
-                    <p>Vacation and travel planning app. Utilizes Google Maps API, Routes API, and Places API.</p>
-                    <p>Skills Used: Javascript, HTML, CSS</p>
+                    <h3>Pather</h3>
+                    <div class="hidden">
+                        <p>Vacation and travel planning web app. Utilizes Google Maps API, Routes API, and Places API to search for travel destinations, check desination information, and add destinations to a travel planner.</p>
+                        <div>
+                            <button>Github</button>
+                            <button>Live</button>
+                        </div>
+                    </div>
                 </a>
                 <div class="project_item">
-                    <h3>Pather</h3>
-                    <p>Vacation and travel planning app. Utilizes Google Maps API, Routes API, and Places API.</p>
+                    <h3>Lore Keeper</h3>
+                    <p></p>
                     <p>Skills Used: Javascript, HTML, CSS</p>
                     <button>Github</button>
                 </div>
@@ -140,6 +145,12 @@
         width: 100%;
     }
 
+    .hidden {
+        visibility: hidden;
+    }
+    .project_item:hover .hidden {
+        visibility: visible;
+    }
     /* about section styling */
     #about {
         display: flex;
@@ -235,7 +246,7 @@
         border: 1px solid grey;
         padding: 15px;
         margin: 15px;
-        min-height: 220px;
+        min-height: 500px;
     }
 
     .project_item > h3 {
