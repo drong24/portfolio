@@ -145,11 +145,19 @@
         width: 100%;
     }
 
+    .project_item {
+        position: relative;
+    }
     .hidden {
-        visibility: hidden;
+        position: absolute;
+        bottom: 0;
+        opacity: 0;
+        transition: 0.5s;
     }
     .project_item:hover .hidden {
-        visibility: visible;
+        opacity: 100%;;
+        transform: translateY(-100px);
+        background-color: blanchedalmond;
     }
     /* about section styling */
     #about {
