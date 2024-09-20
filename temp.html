@@ -5,164 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+
+        // adds fade in animation for about section when site is loaded
+        window.addEventListener('load', () => {
+            const aboutSection = document.getElementById('about');
+            aboutSection.style.opacity = '1';
+            aboutSection.style.transform = 'translateY(0)';
+        })
+        // adds fade in animation when a section enters the viewport
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('.fade_in'); // target all "fade_in" sections
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top; // get the position of the section relative to the viewport
+                const sectionBottom = section.getBoundingClientRect().bottom; // get the position of the section's bottom relative to the viewport
+                const windowHeight = window.innerHeight;
+        
+                // check if ANY part of the section is in the viewport
+                if (sectionTop < windowHeight && sectionBottom > 0) {
+                    section.style.opacity = '1';
+                    section.style.transform = 'translateY(0)';
+                } else {
+                    section.style.opacity = '0';
+                    section.style.transform = 'translateY(50px)';
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="main">
-        <div id="about">
-            <div class="header">
-                <a target="_blank" class="resume_link" href="./Daisy Rong Resume.pdf"><img class="personal_links" src="/icons8-file-128.png" alt="">View Resume in PDF</a>
-                <div>
-                    <a target="_blank" href="https://github.com/drong24"><img class="personal_links" src="./images/icons8-github-50.png" alt=""></a>
-                    <a target="_blank" href="https://linkedin.com/in/drong24"><img class="personal_links" src="./images/icons8-linkedin-50.png" alt=""></a>
-                </div>
+        <header class="header">
+            <a target="_blank" class="resume_link" href="./Daisy Rong Resume.pdf"><img class="link_img" src="./images/icons8-file-128.png" alt="resume link">View Resume in PDF</a>
+            <div>
+                <a target="_blank" href="https://github.com/drong24"><img class="link_img" src="./images/icons8-github-50.png" alt=""></a>
+                <a target="_blank" href="https://linkedin.com/in/drong24"><img class="link_img" src="./images/icons8-linkedin-50.png" alt=""></a>
             </div>
-            <ul class="nav">
-                <li><a class="nav_a" href="#about">About</a></li>
-                <li><a class="nav_a" href="#projects">Projects</a></li>
-                <li><a class="nav_a" href="#skills">Skills</a></li>
-                <li><a class="nav_a" href="#education">Education</a></li>
-                <li><a class="nav_a" href="#contact">Contact</a></li>
-            </ul>
+        </header>
+        <section id="about" class="fade_in">
+            <nav class="nav">
+                <a class="nav_a" href="#about">About</a>
+                <a class="nav_a" href="#projects">Projects</a>
+                <a class="nav_a" href="#skills">Skills</a>
+                <a class="nav_a" href="#education">Education</a>
+                <a class="nav_a" href="#contact">Contact</a>
+            </nav>
             <h1>Daisy Rong</h1>
             <div class="about_description"> 
-                <p>Computer Science student graduating December 2024. I like to code in Java and Javascript. A big fan of barley green tea.</p>
+                <p class="description">Computer Science student graduating December 2024. I like to code in Java and Javascript. A big fan of barley green tea.</p>
                 <img src="./tea.gif" alt="">
             </div>
-        </div>
-        </div>
-        <div id="projects" class="content_item">
-            <h2>Projects</h2>
-            <div class="project_list">
-                <div class="project_item">
-                    <div id="pather"></div>
-                    <h3>Pather</h3>
-                    <p>Vacation and travel planning web app. Utilizes Google Maps API, Routes API, and Places API to search for travel destinations, check desination information, and add destinations to a travel planner.</p>
-                    <div class="hidden">
-                        <div>
-                            <a href="#" class="button_one">
-                                <img src="./images/icons8-github-50.png" alt="to github page">
-                                Github
-                            </a>
-                            <a href="#" class="button_two">
-                                <img src="./images/icons8-link-50.png" alt="to live page">
-                                Live
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project_item">
-                    <div id="books-n-nooks" class="bg_image"></div>
-                    <h3>Books 'n Nooks</h3>
-                    <p>Bookstore web app that allows visitors to browse, favorite, and purchase books through the utilization of HTML, CSS, javascript, and PHP. Uses Ajax and and a SQL Server database to store and retreive user and book information.</p>
-                    <div class="hidden">
-                        <div>
-                            <button class="button_one">
-                                <img src="./images/icons8-github-50.png" alt="to github page">
-                                Github
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="project_item">
-                    <div id="books-n-nooks" class="bg_image"></div>
-                    <h3>Books 'n Nooks</h3>
-                    <p>Bookstore web app that allows visitors to browse, favorite, and purchase books through the utilization of HTML, CSS, javascript, and PHP. Uses Ajax and and a SQL Server database to store and retreive user and book information.</p>
-                    <div class="hidden">
-                        <div>
-                            <button class="button_one">
-                                <img src="./images/icons8-github-50.png" alt="to github page">
-                                Github
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="project_item">
-                    <div id="books-n-nooks" class="bg_image"></div>
-                    <h3>Books 'n Nooks</h3>
-                    <p>Bookstore web app that allows visitors to browse, favorite, and purchase books through the utilization of HTML, CSS, javascript, and PHP. Uses Ajax and and a SQL Server database to store and retreive user and book information.</p>
-                    <div class="hidden">
-                        <div>
-                            <button class="button_one">
-                                <img src="./images/icons8-github-50.png" alt="to github page">
-                                Github
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="skills" class="content_item">
-            <h2>Skills</h2>
-            <div class="grid">
-                <div class="skill_item">
-                    <img src="./images/icons8-java-100.png" alt="">
-                    <p>Java</p>
-                </div>
-                <div class="skill_item">
-                    <img src="./images/icons8-javascript-100.png" alt="">
-                    <p>Javascript</p>
-                </div>
-                <div class="skill_item">
-                    <img src="./images/icons8-html-100.png" alt="">
-                    <p>HTML</p>
-                </div>
-                <div class="skill_item">
-                    <img src="./images/icons8-css-100.png" alt="">
-                    <p>CSS</p>
-                </div>
-                <div class="skill_item">
-                    <img src="./images/icons8-php-100.png" alt="">
-                    <p>PHP</p>
-                </div>
-                <div class="skill_item">
-                    <img src="./images/icons8-swift-100.png" alt="">
-                    <p >Swift</p>
-                </div>
-                <div class="skill_item">
-                    <img src="./images/icons8-git-100.png" alt="">
-                    <p>Git</p>
-                </div>
-                <div class="skill_item">
-                    <img src="./images/icons8-visual-studio-100.png" alt="">
-                    <p>Visual Studio</p>
-                </div>
-                <div class="skill_item">
-                    <img src="./images/icons8-vs-code-100.png" alt="">
-                    <p>VSCode</p>
-                </div>
-                <div class="skill_item">
-                    <img src="./images/icons8-sql-100.png" alt="">
-                    <p>SQL</p>
-                </div>
-                <div class="skill_item">
-                    <img src="./images/icons8-mysql-100.png" alt="">
-                    <p>MySQL</p>
-                </div>
-            </div>
-        </div>
-        <div id="education" class="content_item">
+        </section>
 
-        </div>
-        <div id="contact" class="content_item">
+        <section id="contact" class="fade_in">
             <h2>Contact Me</h2>
+            <div class="contact form">
+                <div class="contact_row_one">
+                    <div>
+                        <div>Name</div>
+                        <input type="text" name="name" id="name_input">
+                    </div>
+                    <div>
+                        <div>Email Address</div>
+                        <input type="text" name="email" id="email_input">
+                    </div>
+                </div>
+                <div class="contact_row_two">
+                    <div>Message</div>
+                    <input type="text" name="message" id="message_input">
+                </div>
+                <button>Send</button>
+            </div>
+
+            <!--   
             <div>
                 <p class="contact_info">Please contact me directly at daisyrong24@gmail.com or through this form.</p>
                 <form class="contact_form" action="https://api.web3forms.com/submit" method="POST">
                     <input type="hidden" name="redirect" value="#">
-                    <!--<input type="hidden" name="access_key" value="5635d66e-3caa-45e9-b0f9-c909a0d2c655">-->
+                    <input type="hidden" name="access_key" value="5635d66e-3caa-45e9-b0f9-c909a0d2c655">
                     <input class="contact_form_name" type="email" maxlength="100" placeholder="Your email" name="email" required>
                     <textarea class="contact_form_message" name="message" maxlength="5000" placeholder="Your message" required></textarea>
                     <button type="submit" onclick="showSuccessMessage()">Submit</button>
                 </form>
-            </div>
-        </div>
+            </div> 
+            -->
+        </section>
     </div>
 </body>
 <style>
     * {
         padding: 0px;
         margin: 0px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-family: 'Poppins', 'Times New Roman', sans-serif;
     }
     html {
         scroll-behavior: smooth;
@@ -178,27 +112,11 @@
     h1 {
         font-size: 13vw;
     }
-    ul > li {
-        list-style: none;
-    }
     .main {
-        width: 100%;
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
-
-    .project_item {
-        position: relative;
-    }
-    .hidden {
-        position: absolute;
-        bottom: 0;
-        opacity: 0;
-        transition: 0.5s;
-    }
-    .project_item:hover .hidden {
-        opacity: 100%;;
-        transform: translateY(-60px);
-    }
-
     /* reused styling */
     .button_one {
         padding: 8px;
@@ -240,23 +158,38 @@
         margin-right: 12px;
     }
 
-    /* about section styling */
+    .fade_in {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity .75s, transform .75s;
+    }
+
+    /* header */
+    .link_img {
+        width: 35px;
+    }
+    .resume_link {
+        display: flex;
+        align-items: center;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5%;
+        margin-bottom: 50px;
+        width: 97%;
+    }
+
+    /* about */
     #about {
         display: flex;
         flex-direction: column;
         align-items: center;
         min-height: 100vh;
     }
-    #about > p {
+    .description {
         margin-top: 5px;
         margin-bottom: 30px;
-    }
-    .personal_links {
-        width: 35px;
-    }
-    .resume_link {
-        display: flex;
-        align-items: center;
     }
     .nav {
         display: flex;
@@ -291,13 +224,6 @@
         right: 0;
 
     }
-    .header {
-        display: flex;
-        justify-content: space-between;
-        padding: 15px;
-        margin-bottom: 50px;
-        width: 90%;
-    }
     .about_description {
         display: flex;
         align-items: center;
@@ -312,125 +238,11 @@
         height: auto;
     }
 
-    /* projects section styling */
-
-    @media (max-width:1000px) {
-        .project_list {
-            grid-template-columns: 100% !important;
-        }
-    }
-    #projects {
-        min-height: 100vh;
-    }
-    .project_list {
-        display: grid;
-        grid-template-columns: 50% 50%;
-    }
-    .project_item {
-        border: 1px solid grey;
-        padding: 15px;
-        padding-left: 8%;
-        padding-right: 8%;
-        margin: 15px;
-        min-height: 500px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #pather {
-        background-image: url(./images/pather-bg.png);
-        filter: blur(8px);
-        -webkit-filter: blur(8px);
-        position: absolute;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        opacity: 85%;
-    }
-
-    #books-n-nooks {
-        background-image: url(./images/books-n-nooks-bg.jpeg);
-        filter: blur(8px);
-        -webkit-filter: blur(8px);
-        position: absolute;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        opacity: 85%;
-    }
-    .project_item > h3 {
-        margin-bottom: 30px;
-        font-size: 26pt;
-    }
-    .project_item > p {
-        font-size: 12.5pt;
-    }
-
-    /* Skills Section Styling */
-    #skills > h2 {
-        margin-bottom: 30px;
-    }
-    .grid {
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        justify-items: center;
-    }
-    .skill_item {
-        padding: 15px;
-        transition: .5s;
-    }
-    .skill_item:hover {
-        transform: translate(0px) scale(1.25) translateZ(0px);
-        font-weight: 900;
-    }
-    .skill_item > img {
-        max-width: 80px;
-        max-height: 80px;
-        margin-bottom: 10px;
-    }
-    .skill_item > p {
-        text-align: center;
-    }
-
     /* Contact Section Styling */
-    .content_item {
-        padding: 5%;
+    #contact {
+        height: 200vh;
     }
-    #contact > h2 {
-        margin-bottom: 30px;
-    }
-    .contact_info {
-        margin-bottom: 30px;
-    }
-    .contact_form {
-        display: flex;
-        flex-direction: column;
-    }
-    .contact_form_name {
-        margin-bottom: 30px;
-        min-height: 17pt;
-        padding: 9px;
-        font-size: 12pt;
-    }
-    .contact_form_message {
-        min-height: 200pt;
-        padding: 7px;
-        margin-bottom: 30px;
-        font-size: 12pt;
-    }
-    .contact_form > button {
-        width: 150px;
-        padding: 10px;
-        border-radius: 15px;
-        background-color: black;
-        color: white;
-        font-weight: 900;
-    }
-
-    /* */
-
 
 </style>
+
 </html>
