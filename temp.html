@@ -29,6 +29,42 @@
                 <img src="./tea.gif" alt="">
             </div>
         </div>
+        </div>
+        <div id="projects" class="content_item">
+            <h2>Projects</h2>
+            <div class="project_list">
+                <div class="project_item">
+                    <div id="pather"></div>
+                    <h3>Pather</h3>
+                    <p>Vacation and travel planning web app. Utilizes Google Maps API, Routes API, and Places API to search for travel destinations, check desination information, and add destinations to a travel planner.</p>
+                    <div class="hidden">
+                        <div>
+                            <a href="#" class="button_one">
+                                <img src="./images/icons8-github-50.png" alt="to github page">
+                                Github
+                            </a>
+                            <a href="#" class="button_two">
+                                <img src="./images/icons8-link-50.png" alt="to live page">
+                                Live
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project_item">
+                    <div id="books-n-nooks" class="bg_image"></div>
+                    <h3>Books 'n Nooks</h3>
+                    <p>Bookstore web app that allows visitors to browse, favorite, and purchase books through the utilization of HTML, CSS, javascript, and PHP. Uses Ajax and and a SQL Server database to store and retreive user and book information.</p>
+                    <div class="hidden">
+                        <div>
+                            <button class="button_one">
+                                <img src="./images/icons8-github-50.png" alt="to github page">
+                                Github
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div id="skills" class="content_item">
             <h2>Skills</h2>
             <div class="grid">
@@ -75,35 +111,6 @@
                 <div class="skill_item">
                     <img src="./images/icons8-mysql-100.png" alt="">
                     <p>MySQL</p>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div id="projects" class="content_item">
-            <h2>Projects</h2>
-            <div class="project_list">
-                <a href="#about" class="project_item">
-                    <div class="bg_image"></div>
-                    <h3>Pather</h3>
-                    <p>Vacation and travel planning web app. Utilizes Google Maps API, Routes API, and Places API to search for travel destinations, check desination information, and add destinations to a travel planner.</p>
-                    <div class="hidden">
-                        <div>
-                            <button class="button_one">
-                                <img src="./images/icons8-github-50.png" alt="to github page">
-                                Github
-                            </button>
-                            <button class="button_two">
-                                <img src="./images/icons8-link-50.png" alt="to live page">
-                                Live
-                            </button>
-                        </div>
-                    </div>
-                </a>
-                <div class="project_item">
-                    <h3>Lore Keeper</h3>
-                    <p></p>
-                    <p>Skills Used: Javascript, HTML, CSS</p>
-                    <button>Github</button>
                 </div>
             </div>
         </div>
@@ -171,12 +178,17 @@
         padding: 8px;
         border-radius: 8px;
         border: none;
+        font-size: 12pt;
         font-weight: 900;
         background-color: black;
         color: white;    
         display: flex;
         align-items: center;
         margin-bottom: 10px;
+    }
+    .button_one:hover{
+        cursor: pointer;
+        background-color: rgb(48, 48, 48);
     }
     .button_one > img {
         max-width: 24px;
@@ -187,10 +199,15 @@
     .button_two {
         padding: 8px;
         border-radius: 8px;
+        font-size: 12pt;
         font-weight: 900;
         background-color: white;
         display: flex;
         align-items: center;
+    }
+    .button_two:hover{
+        cursor: pointer;
+        background-color: rgb(244, 244, 244);
     }
     .button_two > img {
         max-width: 21px;
@@ -296,7 +313,7 @@
         justify-content: center;
     }
 
-    .bg_image {
+    #pather {
         background-image: url(./images/pather-bg.png);
         filter: blur(8px);
         -webkit-filter: blur(8px);
@@ -304,10 +321,26 @@
         z-index: -1;
         width: 100%;
         height: 100%;
+        opacity: 85%;
+    }
+
+    #books-n-nooks {
+        background-image: url(./images/books-n-nooks-bg.jpeg);
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        opacity: 85%;
     }
     .project_item > h3 {
         margin-bottom: 30px;
         font-size: 26pt;
+    }
+    .project_item > p {
+        font-size: 12.5pt;
+
     }
 
     /* Skills Section Styling */
