@@ -59,22 +59,23 @@
 
         <section id="contact" class="fade_in">
             <h2>Contact Me</h2>
-            <div class="contact form">
+            <p>You can reach me through daisyrong24@gmail.com or through this form.</p>
+            <div class="contact_form">
                 <div class="contact_row_one">
                     <div>
                         <div>Name</div>
-                        <input type="text" name="name" id="name_input">
+                        <input type="text" placeholder="E.g. Sam Smith" name="name" id="name_input">
                     </div>
                     <div>
                         <div>Email Address</div>
-                        <input type="text" name="email" id="email_input">
+                        <input type="text" placeholder="E.g. sam_smith@gmail.com" name="email" id="email_input">
                     </div>
                 </div>
                 <div class="contact_row_two">
                     <div>Message</div>
-                    <input type="text" name="message" id="message_input">
+                    <input type="text" placeholder="Your message here" name="message" id="message_input">
                 </div>
-                <button>Send</button>
+                <button class="button_one">Send</button>
             </div>
 
             <!--   
@@ -93,10 +94,17 @@
     </div>
 </body>
 <style>
+    :root {
+        
+    }
     * {
         padding: 0px;
         margin: 0px;
         font-family: 'Poppins', 'Times New Roman', sans-serif;
+        box-sizing: border-box;
+        text-decoration: none;
+        outline: none;
+        border: none;
     }
     html {
         scroll-behavior: smooth;
@@ -112,8 +120,12 @@
     h1 {
         font-size: 13vw;
     }
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+    }
     .main {
-        width: 90%;
+        width: 100%;
         padding-left: 5%;
         padding-right: 5%;
     }
@@ -229,7 +241,7 @@
         align-items: center;
     }
     .about_description > p {
-        width: 15vw;
+        width: 25vw;
         padding-right: 10vw;
         text-align: center;
     }
@@ -241,6 +253,24 @@
     /* Contact Section Styling */
     #contact {
         height: 200vh;
+    }
+
+    .contact_row_one {
+        display: grid;
+        grid-template-columns: 30% 60%;
+        gap: 10%;
+        padding-bottom: 40px;
+    }
+    .contact_row_two {
+        padding-bottom: 40px;
+    }
+    .contact_form input {
+        background: none;
+        border-bottom: 1px solid black;
+        height: 2rem;
+        color: black;
+        font-size: 0.95rem;
+        width: 100%;
     }
 
 </style>
