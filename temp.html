@@ -56,7 +56,72 @@
                 <img src="./tea.gif" alt="">
             </div>
         </section>
-
+        <section id="projects" class="fade_in">
+            <h2>Projects</h2>
+            <div class="project">
+                <div class="project_description">
+                    <h3>Pather</h3>
+                    <p>Vacation planning. Utilizes Google Maps API and Places API to search for locations and add location information to the planner.</p>
+                    <div>
+                        <a href="" class="button_one">
+                            <img src="./images/icons8-github-50.png" alt="github link">
+                            Github
+                        </a>
+                        <a  href="" class="button_two">
+                            <img src="./images/icons8-link-50.png" alt="site link">
+                            Live
+                        </a>
+                    </div>
+                </div>
+                <div class="project_image"><img src="./images/pather-bg.png" alt="pather site image"></div>
+            </div>
+            <div class="project">
+                <div class="project_description">
+                    <h3>Lore Keeper</h3>
+                    <p>Online bookstore to browse, favorite, and purchase books. Uses a combination of Ajax, PHP, SQL, and SQL Server to store and retreive user and book information.</p>
+                    <div>
+                        <a href="https://github.com/drong24/Pather" class="button_one">
+                            <img src="./images/icons8-github-50.png" alt="github link">
+                            Github
+                        </a>
+                    </div>
+                </div>
+                <div class="project_image"><img src="./images/books-n-nooks-bg.jpeg" alt="pather site image"></div>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="grid">
+                <div>
+                    <h3>Languages:</h3>
+                    <ul class="skills_list">
+                        <li><img src="./images/icons8-javascript-100.png" alt="javascript"><span>Javascript</span></li>
+                        <li><img src="./images/icons8-java-100.png" alt="java"><span>Java</span></li>
+                        <li><img src="./images/icons8-html-100.png" alt="html"><span>HTML</span></li>
+                        <li><img src="./images/icons8-css-100.png" alt="css"><span>CSS</span></li>
+                        <li><img src="./images/icons8-sql-100.png" alt="sql"><span>SQL</span></li>
+                        <li><img src="./images/icons8-php-100.png" alt="php"><span>PHP</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Technologies:</h3>
+                    <ul class="skills_list">
+                        <li><img src="./images/icons8-git-100.png" alt="git"><span>git</span></li>
+                        <li><img src="./images/icons8-vs-code-100.png" alt="vscode"><span>VS Code</span></li>
+                    </ul>
+                </div>
+        </section>
+        <section id="education" class="fade_in">
+            <h2>EDUCATION</h2>
+            <div class="degree">
+                <div class="degree_top">
+                    <h3>Bachelor of Computer Science</h3>
+                    <span>Auburn University | Auburn, AL</span>
+                </div>
+                <p>Computer Science</p>
+                <p>GPA: 3.75</p>
+            </div>
+        </section>
         <section id="contact" class="fade_in">
             <h2>Contact Me</h2>
             <div class="contact_form">
@@ -72,7 +137,7 @@
                 </div>
                 <div class="contact_row_two">
                     <label class="contact_label">Message</label>
-                    <input type="text" placeholder="Your message here" name="message" id="message_input">
+                    <textarea name="message" placeholder="Your message here" id="message_input" cols="80" rows="1"></textarea>
                 </div>
                 <button>Send</button>
             </div>
@@ -83,6 +148,8 @@
     :root {
         --darkgrey: #262626;
         --steelgrey: #909090;
+        --lightgrey: #e0e0e0;
+
     }
     * {
         padding: 0px;
@@ -112,10 +179,16 @@
         font-size: 2.5rem;
         margin-bottom: 40px;
     }
+    li {
+        list-style-type: none;
+    }
     .main {
         width: 100%;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+    section {
+        margin-bottom: 14%;
     }
     /* reused styling */
     .button_one {
@@ -129,10 +202,11 @@
         display: flex;
         align-items: center;
         margin-bottom: 10px;
+        max-width: 8rem;
     }
     .button_one:hover{
         cursor: pointer;
-        background-color: rgb(48, 48, 48);
+        color: var(--lightgrey);
     }
     .button_one > img {
         max-width: 24px;
@@ -148,10 +222,12 @@
         background-color: white;
         display: flex;
         align-items: center;
+        max-width: 8rem;
+        border: 1px solid var(--darkgrey);
     }
     .button_two:hover{
         cursor: pointer;
-        background-color: rgb(244, 244, 244);
+        background-color: var(--lightgrey);
     }
     .button_two > img {
         max-width: 21px;
@@ -238,7 +314,68 @@
         height: auto;
     }
 
-    /* Contact Section Styling */
+    /* Projects */ 
+
+    .project {
+        display: flex;
+        flex-direction: row;
+        gap: 20%;
+        margin-bottom: 5%;
+    }
+    .project_description {
+        width: 40%;
+    }
+    .project_description > h3 {
+        padding-top: 10%;
+        padding-bottom: 5%;
+        font-size: 16pt;
+    }
+    .project_description > p {
+        padding-bottom: 10%;
+        color: var(--steelgrey);
+    }
+
+    .project_image {
+        width: 55%;
+    }
+    .project_image > img {
+        width: 100%;
+        height: auto;
+        border: 10px solid black;
+    }
+    @media screen and (max-width: 992px){
+        .project {
+            flex-direction: column;
+        }
+        .project_description {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        .project_image {
+            width: 100%;
+        }
+    }
+
+    /* Skills */
+    .skills_list {
+        display: flex;
+    }
+    .skills_list > li {
+        width: ;
+    }
+
+    /* Education */
+
+    .degree_top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    .degree > p {
+        color: var(--steelgrey);
+    }
+
+    /* Contact */
 
     .contact_row_one {
         display: grid;
@@ -259,12 +396,12 @@
         line-height: 2rem;
         color: rgb(50, 50, 50);
     }
-    .contact_form input {
+    .contact_form input, .contact_form textarea {
         background: none;
         border-bottom: 1px solid black;
         height: 2rem;
         color: grey;
-        font-size: 0.95rem;
+        font-size: 1rem;
         width: 100%;
     }
     .contact_form button {
@@ -274,7 +411,6 @@
         font-weight: 900;
         background-color: black;
         color: whitesmoke;    
-        margin-bottom: 10%;
         min-width: 12rem;
     }
     .contact_form button:hover{
