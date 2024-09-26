@@ -92,22 +92,22 @@
         <section id="skills">
             <h2>Skills</h2>
             <div class="grid">
-                <div>
+                <div class="languages">
                     <h3>Languages:</h3>
                     <ul class="skills_list">
-                        <li><img src="./images/icons8-javascript-100.png" alt="javascript"><span>Javascript</span></li>
-                        <li><img src="./images/icons8-java-100.png" alt="java"><span>Java</span></li>
-                        <li><img src="./images/icons8-html-100.png" alt="html"><span>HTML</span></li>
-                        <li><img src="./images/icons8-css-100.png" alt="css"><span>CSS</span></li>
-                        <li><img src="./images/icons8-sql-100.png" alt="sql"><span>SQL</span></li>
-                        <li><img src="./images/icons8-php-100.png" alt="php"><span>PHP</span></li>
+                        <li class="skill"><img src="./images/icons8-javascript-100.png" alt="javascript"><span>Javascript</span></li>
+                        <li class="skill"><img src="./images/icons8-java-100.png" alt="java"><span>Java</span></li>
+                        <li class="skill"><img src="./images/icons8-html-100.png" alt="html"><span>HTML</span></li>
+                        <li class="skill"><img src="./images/icons8-css-100.png" alt="css"><span>CSS</span></li>
+                        <li class="skill"><img src="./images/icons8-sql-100.png" alt="sql"><span>SQL</span></li>
+                        <li class="skill"><img src="./images/icons8-php-100.png" alt="php"><span>PHP</span></li>
                     </ul>
                 </div>
-                <div>
+                <div class="technologies">
                     <h3>Technologies:</h3>
                     <ul class="skills_list">
-                        <li><img src="./images/icons8-git-100.png" alt="git"><span>git</span></li>
-                        <li><img src="./images/icons8-vs-code-100.png" alt="vscode"><span>VS Code</span></li>
+                        <li class="skill"><img src="./images/icons8-git-100.png" alt="git"><span>git</span></li>
+                        <li class="skill"><img src="./images/icons8-vs-code-100.png" alt="vscode"><span>VS Code</span></li>
                     </ul>
                 </div>
         </section>
@@ -357,7 +357,23 @@
     }
 
     /* Skills */
-
+    .languages {
+        margin-bottom: 4%;
+    }
+    .skills_list {
+        display: flex;
+    }
+    .skill {
+        border: 1px solid var(--lightgrey);
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        margin: 8px;
+    }
+    .skill > img {
+        max-width: 55px;
+        margin-right: 16px;
+    }
 
     /* Education */
 
