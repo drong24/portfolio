@@ -231,6 +231,10 @@ section {
 
 /* Education */
 
+.degree {
+    border: 1px solid grey;
+    padding: 2rem;
+}
 .degree_top {
     display: flex;
     justify-content: space-between;
@@ -241,7 +245,7 @@ section {
 }
 .degree_seperator {
     width: 1px;
-    height: 250px;
+    height: 200px;
     background-color: black;
     margin-left: 10%;
 }

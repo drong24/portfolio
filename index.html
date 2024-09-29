@@ -88,8 +88,8 @@
                 <div class="currently_learning skills_list_outer">
                     <h3>Currently Learning:</h3>
                     <ul class="skills_list">
-                        <li class="skill"><img src="./images/auburn.jpeg" alt="git"><span>Clean Code By Robert C. Martin</span></li>
-                        <li class="skill"><img src="./images/auburn.jpeg" alt="vscode"><span>The Odin Project: Full Stack Javascript</span></li>
+                        <li class="skill"><img src="./images/clean_code_book.jpg" alt="git"><span>Clean Code By Robert C. Martin</span></li>
+                        <li class="skill"><img src="./images/odin_project.png" alt="vscode"><span>The Odin Project: Full Stack Javascript</span></li>
                     </ul>
                 </div>
         </section>
@@ -116,23 +116,25 @@
         </section>
         <section id="contact" class="fade_in">
             <h2>Contact Me</h2>
-            <div class="contact_form">
+            <form class="contact_form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="redirect" value="https://drong24.github.io/portfolio/">
+                <input type="hidden" name="access_key" value="5635d66e-3caa-45e9-b0f9-c909a0d2c655">
                 <div class="contact_row_one">
                     <div>
                         <label class="contact_label">Name</label>
-                        <input type="text" placeholder="E.g. Sam Smith" name="name" id="name_input">
+                        <input type="text" placeholder="E.g. Sam Smith" name="name" id="name_input" required>
                     </div>
                     <div>
                         <label class="contact_label">Email Address</label>
-                        <input type="text" placeholder="E.g. sam_smith@gmail.com" name="email" id="email_input">
+                        <input type="email" placeholder="E.g. sam_smith@gmail.com" name="email" id="email_input" required>
                     </div>
                 </div>
                 <div class="contact_row_two">
                     <label class="contact_label">Message</label>
-                    <textarea name="message" placeholder="Your message here" id="message_input" cols="80" rows="1"></textarea>
+                    <textarea name="message" placeholder="Your message here" id="message_input" cols="80" rows="1" required></textarea>
                 </div>
-                <button>Send</button>
-            </div>
+                <button type="submit">Send</button>
+            </form>
         </section>
     </div>
 </body>
