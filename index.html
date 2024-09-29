@@ -4,182 +4,134 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daisy Rong</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-    <script src="noise.min.js"></script>
-    <script src="util.js"></script>
-    <script src="swirl.js"></script>
+    <title>Portfolio</title>
 </head>
-    <body>
-    <div class="main_content">
-        <div class="nav_bar dis_none">
-            <a href="#about" class="nav_img"><img src="./images/Profile Image.jpg" class="img_profile" alt="profile_image"></a>
-            <nav class="nav_items">
-                <ul>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#education">EDUCATION</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
+<body>
+    <div class="main">
+        <header class="header">
+            <a target="_blank" class="resume_link" href="./Daisy Rong Resume.pdf"><img class="link_img" src="./images/icons8-file-128.png" alt="resume link">View Resume in PDF</a>
+            <div>
+                <a target="_blank" href="https://github.com/drong24"><img class="link_img" src="./images/icons8-github-50.png" alt=""></a>
+                <a target="_blank" href="https://linkedin.com/in/drong24"><img class="link_img" src="./images/icons8-linkedin-50.png" alt=""></a>
+            </div>
+        </header>
+        <section id="about" class="fade_in">
+            <nav class="nav">
+                <a class="nav_a" href="#about">About</a>
+                <a class="nav_a" href="#projects">Projects</a>
+                <a class="nav_a" href="#skills">Skills</a>
+                <a class="nav_a" href="#education">Education</a>
+                <a class="nav_a" href="#contact">Contact</a>
             </nav>
-            <div class="personal_links">
-                <a href="https://github.com/drong24"><img src="./images/icons8-github-50.png" alt=""></a>
-                <a href="https://linkedin.com/in/drong24"><img src="./images/icons8-linkedin-50.png" alt=""></a>
+            <h1>Daisy Rong</h1>
+            <div class="about_description"> 
+                <p class="description">Computer Science student graduating December 2024. I like to code in Java and Javascript. A big fan of barley green tea.</p>
+                <img src="./tea.gif" alt="">
             </div>
-        </div>
-        <div class="a-bg content--canvas"></div>
-        <div id="right_content">
-            <div id="about" class="vh-100 content_item">
-                <h1>Daisy Rong</h1>
-                <h3>Computer Science Student</h3>
-                <h3 class="margin-b-30">Fremont, CA</h3>
-                <div class="margin-b-100">
-                    <p>
-                        Hello! My name is Daisy and I am a senior at Auburn University studying Computer Science set to graduate December 2024.
-                        I enjoy building interesting things and solving problems. 
-                        I mainly choose to code in Java and Javascript (the two languages I'm most comfortable with) alongside HTML, CSS, SQL, and Swift.
-                    </p>
-                </div>
-                <a href="./Daisy Rong Resume.pdf" target="_blank" class="fs-link">View resume in PDF</a>
-            </div>
-            <div id="projects" class="vh-100 content_item">
-                <h1>Projects</h1>
-                <div class="project_list">
-                    <div class="bg-shadow margin-b-30">
-                        <h3>TCPClientServerCalculator</h3>
-                        <h4 class="margin-b-30">Skills used: Java</h4>
-                        <p class="margin-b-30">
-                            Implementation of a remote Calculating Server. 
-                            This calculating server performs bitwise Boolean and arithmetic computations requested by a clients.
-                        </p>
-                        <a class="href-button" href="https://github.com/drong24/TCPClientServerCalculator">
-                            <img class="img_icon_s margin-r-30" src="./images/icons8-github-50.png" alt=""> 
-                            Github
-                        </a>
-                    </div>
-                    <div class="bg-shadow margin-b-30">
-                        <h3>Bookstore-Webapp</h3>
-                        <h4 class="margin-b-30">Skills used: Javascript, HTML, CSS, PHP, Ajax, SQL, SQL Server</h4>
-                        <p class="margin-b-30">
-                            A sliding puzzle game consisting of a 4x4 grid of numbered tiles with one tile missing. The objective is to arrange the tiles 
-                            in numerical order using the empty space to move tiles.
-                        </p>
-                        <div class="flex">
-                            <a class="href-button margin-r-30" href="https://github.com/drong24/Bookstore-Webapp">
-                                <img class="img_icon_s margin-r-30" src="./images/icons8-github-50.png" alt="">
-                                Github
-                            </a>
-                            <!--
-                                <a class="href-button" href="https://github.com/drong24/FifteenPuzzle">
-                                <img class="img_icon_s margin-r-30" src="./images/icons8-link-50.png" alt="">
-                                Live
-                            </a>
-                            -->
-                        </div>
-                    </div>
-                    <div class="bg-shadow margin-b-30">
-                        <h3>FifteenPuzzle</h3>
-                        <h4 class="margin-b-30">Skills used: Javascript, HTML, CSS</h4>
-                        <p class="margin-b-30">
-                            A sliding puzzle game consisting of a 4x4 grid of numbered tiles with one tile missing. The objective is to arrange the tiles 
-                            in numerical order using the empty space to move tiles.
-                        </p>
-                        <a class="href-button" href="https://github.com/drong24/FifteenPuzzle">
-                            <img class="img_icon_s margin-r-30" src="./images/icons8-github-50.png" alt=""> 
-                            Github
-                        </a>
-                    </div>
-                    <div class="bg-shadow margin-b-100">
-                        <h3>MorgagePayment</h3>
-                        <h4 class="margin-b-30">Skills used: Swift, XCode</h4>
-                        <p class="margin-b-30">
-                            IOS app used to calculate morgage payments.
-                        </p>
-                        <a class="href-button" href="https://github.com/drong24/MorgagePayment">
-                            <img class="img_icon_s margin-r-30" src="./images/icons8-github-50.png" alt=""> 
-                            Github
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div id="skills" class="vh-100 content_item">
-                <h1>SKILLS</h1>
-                <div class="grid">
-                    <div class="h-large">
-                        <img class="img_icon" src="./images/icons8-java-100.png" alt="">
-                        <p class="margin-t-2 fs-20">Java</p>
-                    </div>
-                    <div class="h-large">
-                        <img class="img_icon" src="./images/icons8-javascript-100.png" alt="">
-                        <p class="margin-t-2 fs-20">Javascript</p>
-                    </div>
-                    <div class="h-large">
-                        <img class="img_icon" src="./images/icons8-html-100.png" alt="">
-                        <p class="margin-t-2 fs-20">HTML</p>
-                    </div>
-                    <div class="h-large">
-                        <img class="img_icon" src="./images/icons8-css-100.png" alt="">
-                        <p class="margin-t-2 fs-20">CSS</p>
-                    </div>
-                    <div class="h-large">
-                        <img class="img_icon" src="./images/icons8-php-100.png" alt="">
-                        <p class="margin-t-2 fs-20">PHP</p>
-                    </div>
-                    <div class="h-large">
-                        <img class="img_icon" src="./images/icons8-swift-100.png" alt="">
-                        <p class="margin-t-2 fs-20">Swift</p>
-                    </div>
-                    <div class="h-large">
-                        <img class="img_icon" src="./images/icons8-git-100.png" alt="">
-                        <p class="margin-t-2 fs-20">Git</p>
-                    </div>
-                    <div class="h-large">
-                        <img class="img_icon" src="./images/icons8-visual-studio-100.png" alt="">
-                        <p class="margin-t-2 fs-20">Visual Studio</p>
-                    </div>
-                    <div class="h-large">
-                        <img class="img_icon" src="./images/icons8-vs-code-100.png" alt="">
-                        <p class="margin-t-2 fs-20">VSCode</p>
-                    </div>
-                    <div class="h-large">
-                        <img class="img_icon" src="./images/icons8-sql-100.png" alt="">
-                        <p class="margin-t-2 fs-20">SQL</p>
-                    </div>
-                    <div class="h-large">
-                        <img class="img_icon" src="./images/icons8-mysql-100.png" alt="">
-                        <p class="margin-t-2 fs-20">MySQL</p>
-                    </div>
-                </div>
-            </div>
-            <div id="education" class="content_item vh-100">
-                <h1>EDUCATION</h1>
-                <div class="flex bg-shadow">
-                    <img class="margin-r-30 img_icon_l" src="./images/auburn.jpeg" alt="">
+        </section>
+        <section id="projects" class="fade_in">
+            <h2>Projects</h2>
+            <div class="project">
+                <div class="project_description">
+                    <h3>Pather</h3>
+                    <p>Vacation planning. Utilizes Google Maps API and Places API to search for locations and add location information to the planner.</p>
                     <div>
-                        <h3>Bachelor of Computer Science</h3>
-                        <h3>Auburn University | Auburn, AL</h3>
-                        <p>Computer Science</p>
-                        <p>GPA: 3.75</p>
+                        <a href="" class="button_one">
+                            <img src="./images/icons8-github-50.png" alt="github link">
+                            Github
+                        </a>
+                        <a  href="" class="button_two">
+                            <img src="./images/icons8-link-50.png" alt="site link">
+                            Live
+                        </a>
                     </div>
                 </div>
+                <div class="project_image"><img src="./images/pather-bg.png" alt="pather site image"></div>
             </div>
-            <div id="contact" class="content_item vh-100">
-                <h1>Contact Me!</h1>
-                <div>
-                    <p class="margin-b-30">Please contact me directly at daisyrong24@gmail.com or through this form.</p>
-                    <form class="flex-c" action="https://api.web3forms.com/submit" method="POST">
-                        <input type="hidden" name="redirect" value="https://drong24.github.io/portfolio/">
-                        <input type="hidden" name="access_key" value="5635d66e-3caa-45e9-b0f9-c909a0d2c655">
-                        <input class="margin-b-30" type="email" maxlength="100" placeholder="Your email" name="email" required>
-                        <textarea class="margin-b-30" name="message" maxlength="5000" placeholder="Your message" required></textarea>
-                        <button type="submit" onclick="showSuccessMessage()">Submit</button>
-                    </form>
+            <div class="project">
+                <div class="project_description">
+                    <h3>Lore Keeper</h3>
+                    <p>Online bookstore to browse, favorite, and purchase books. Uses a combination of Ajax, PHP, SQL, and SQL Server to store and retreive user and book information.</p>
+                    <div>
+                        <a href="https://github.com/drong24/Pather" class="button_one">
+                            <img src="./images/icons8-github-50.png" alt="github link">
+                            Github
+                        </a>
+                    </div>
                 </div>
+                <div class="project_image"><img src="./images/books-n-nooks-bg.jpeg" alt="pather site image"></div>
             </div>
-        </div>
+        </section>
+        <section id="skills" class="fade_in">
+            <h2>Skills</h2>
+            <div class="grid">
+                <div class="languages skills_list_outer">
+                    <h3>Languages:</h3>
+                    <ul class="skills_list">
+                        <li class="skill"><img src="./images/icons8-javascript-100.png" alt="javascript"><span>Javascript</span></li>
+                        <li class="skill"><img src="./images/icons8-java-100.png" alt="java"><span>Java</span></li>
+                        <li class="skill"><img src="./images/icons8-html-100.png" alt="html"><span>HTML</span></li>
+                        <li class="skill"><img src="./images/icons8-css-100.png" alt="css"><span>CSS</span></li>
+                        <li class="skill"><img src="./images/icons8-sql-100.png" alt="sql"><span>SQL</span></li>
+                        <li class="skill"><img src="./images/icons8-php-100.png" alt="php"><span>PHP</span></li>
+                    </ul>
+                </div>
+                <div class="technologies skills_list_outer">
+                    <h3>Technologies:</h3>
+                    <ul class="skills_list">
+                        <li class="skill"><img src="./images/icons8-git-100.png" alt="git"><span>Git</span></li>
+                        <li class="skill"><img src="./images/icons8-vs-code-100.png" alt="vscode"><span>VS Code</span></li>
+                    </ul>
+                </div>
+                <div class="currently_learning skills_list_outer">
+                    <h3>Currently Learning:</h3>
+                    <ul class="skills_list">
+                        <li class="skill"><img src="./images/auburn.jpeg" alt="git"><span>Clean Code By Robert C. Martin</span></li>
+                        <li class="skill"><img src="./images/auburn.jpeg" alt="vscode"><span>The Odin Project: Full Stack Javascript</span></li>
+                    </ul>
+                </div>
+        </section>
+        <section id="education" class="fade_in">
+            <h2>EDUCATION</h2>
+            <div class="degree">
+                <div class="degree_top">
+                    <h3>Bachelor of Arts</h3>
+                    <span>December 2017</span>
+                </div>
+                <p>San Jose State University | San Jose, CA</p>
+                <p>Psychology</p>
+
+            </div>
+            <div class="degree_seperator"></div>
+            <div class="degree">
+                <div class="degree_top">
+                    <h3>Bachelor of Computer Science</h3>
+                    <span>December 2024</span>
+                </div>
+                <p>Auburn University | Auburn, AL</p>
+                <p>Computer Science</p>
+            </div>
+        </section>
+        <section id="contact" class="fade_in">
+            <h2>Contact Me</h2>
+            <div class="contact_form">
+                <div class="contact_row_one">
+                    <div>
+                        <label class="contact_label">Name</label>
+                        <input type="text" placeholder="E.g. Sam Smith" name="name" id="name_input">
+                    </div>
+                    <div>
+                        <label class="contact_label">Email Address</label>
+                        <input type="text" placeholder="E.g. sam_smith@gmail.com" name="email" id="email_input">
+                    </div>
+                </div>
+                <div class="contact_row_two">
+                    <label class="contact_label">Message</label>
+                    <textarea name="message" placeholder="Your message here" id="message_input" cols="80" rows="1"></textarea>
+                </div>
+                <button>Send</button>
+            </div>
+        </section>
     </div>
 </body>
 </html>
