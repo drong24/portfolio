@@ -167,6 +167,18 @@ section {
     width: 250px;
     height: auto;
 }
+/* Experience */
+.job {
+    border: 1px solid var(--lightgrey);
+    padding: 15px;
+}
+.job_top {
+    display: flex;
+    justify-content: space-between;
+}
+.job > p {
+    color: var(--steelgrey)
+}
 
 /* Projects */ 
 
