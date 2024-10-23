@@ -243,13 +243,9 @@ section {
 
 /* Education */
 
-.degree_timeline {
-    display: flex;
-}
 .degree {
     border: 1px solid grey;
     padding: 2rem;
-    height: 200px;
 }
 .degree_top {
     display: flex;
@@ -260,10 +256,17 @@ section {
     color: var(--steelgrey);
 }
 .degree_seperator {
-    width: 1px;
-    height: 500px;
-    background-color: black;
-    margin: 10%;
+    width: 200px;
+    height: 200px;
+    border: solid 5px black;
+    margin-left: 50%;
+    border-radius: 100%;
+}
+.degree_seperator:nth-child(even) {
+    border-style: none solid none none;
+}
+.degree_seperator:nth-child(odd) {
+    border-style: none none none solid;
 }
 
 /* Contact */
