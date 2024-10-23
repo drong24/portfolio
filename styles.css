@@ -243,9 +243,13 @@ section {
 
 /* Education */
 
+.degree_timeline {
+    display: flex;
+}
 .degree {
     border: 1px solid grey;
     padding: 2rem;
+    height: 200px;
 }
 .degree_top {
     display: flex;
@@ -257,9 +261,9 @@ section {
 }
 .degree_seperator {
     width: 1px;
-    height: 200px;
+    height: 500px;
     background-color: black;
-    margin-left: 10%;
+    margin: 10%;
 }
 
 /* Contact */
