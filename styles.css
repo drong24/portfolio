@@ -167,6 +167,33 @@ section {
     width: 250px;
     height: auto;
 }
+
+/* Journey */
+#my_journey {
+    width: 100%;
+    position: relative;
+}
+.timeline {
+    width: 1px;
+    height: 1000px;
+    background-color: black;
+    margin-left: 50%;
+}
+.journey {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.journey > .destination:nth-child(even) {
+    margin-left: 55%;
+}
+.destination {
+    border: 1px solid black;
+    padding: 27px;
+    width: 45%;
+    margin-top: 20%;
+}
+
 /* Experience */
 .job {
     border: 1px solid var(--lightgrey);
@@ -185,11 +212,11 @@ section {
 .project {
     display: flex;
     flex-direction: row;
-    gap: 20%;
+    gap: 13%;
     margin-bottom: 5%;
 }
 .project_description {
-    width: 40%;
+    width: 35%;
 }
 .project_description > h3 {
     padding-top: 10%;
@@ -202,7 +229,7 @@ section {
 }
 
 .project_image {
-    width: 55%;
+    width: 62%;
 }
 .project_image > img {
     width: 100%;
