@@ -242,7 +242,7 @@ section {
     border: 10px solid black;
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 768px){
     .project {
         flex-direction: column;
     }
