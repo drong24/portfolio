@@ -253,6 +253,17 @@ section {
     .project_image {
         width: 100%;
     }
+    .nav {
+        display: none;
+    }
+    .description {
+        display: none;
+    }
+    .skills_list {
+        flex-direction: column;
+        width: 100%;
+    }
+
 }
 
 /* Skills */
