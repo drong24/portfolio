@@ -197,7 +197,7 @@ section {
 /* Experience */
 .job {
     border: 1px solid var(--lightgrey);
-    padding: 15px;
+    padding: 30px;
 }
 .job_top {
     display: flex;
@@ -228,6 +228,11 @@ section {
     color: var(--steelgrey);
 }
 
+.project_multi_images {
+    display: flex;
+    width: 62%;
+    gap: 15%;
+}
 .project_image {
     width: 62%;
 }
@@ -236,6 +241,7 @@ section {
     height: auto;
     border: 10px solid black;
 }
+
 @media screen and (max-width: 992px){
     .project {
         flex-direction: column;
