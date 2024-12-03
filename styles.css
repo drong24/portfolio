@@ -42,7 +42,7 @@ li {
     padding-right: 6%;
 }
 section {
-    margin-bottom: 14%;
+    margin-bottom: 16%;
 }
 /* reused styling */
 .button_one {
@@ -242,7 +242,8 @@ section {
     border: 10px solid black;
 }
 
-@media screen and (max-width: 968px){
+
+@media screen and (max-width: 800px){
     .project {
         flex-direction: column;
     }
