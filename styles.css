@@ -154,13 +154,22 @@ section {
     right: 0;
 
 }
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tea_image {
+    max-width: 20vw;
+}
 .about_description {
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 .about_description > p {
-    width: 25vw;
-    padding-right: 10vw;
+    margin-top: 30px;
     text-align: center;
 }
 .about_description > img {
