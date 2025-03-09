@@ -156,10 +156,10 @@ section {
 }
 .about_description {
     display: flex;
-    align-items: center;
+    align-items: left;
 }
 .about_description > p {
-    width: 25vw;
+    width: 15vw;
     padding-right: 10vw;
     text-align: center;
 }
