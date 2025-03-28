@@ -329,7 +329,7 @@ section {
     .nav {
         display: none;
     }
-    .description {
+    .about_content > img {
         display: none;
     }
     .skills_list {
