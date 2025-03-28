@@ -2,7 +2,7 @@
 
 // adds fade in animation for about section when site is loaded
 window.addEventListener('load', () => {
-    const aboutSection = document.getElementById('about');
+    const aboutSection = document.getElementById('frontpage');
     addFadeInAnimation(aboutSection);
 })
 // adds fade in animation when a section enters the viewport

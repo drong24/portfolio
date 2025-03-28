@@ -109,6 +109,12 @@ section {
     margin-bottom: 50px;
     width: 97%;
 }
+#frontpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
 
 /* about */
 #about {
@@ -154,18 +160,16 @@ section {
     right: 0;
 
 }
-.about_description {
+.about_content {
     display: flex;
     align-items: center;
 }
-.about_description > p {
-    width: 25vw;
-    padding-right: 10vw;
-    text-align: center;
+.about_content > img {
+    max-width: 40vw;
+    margin-right: 10vw;
 }
-.about_description > img {
-    width: 250px;
-    height: auto;
+.about_content > p {
+    max-width: 50vw;
 }
 
 /* Timeline */
