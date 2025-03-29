@@ -55,7 +55,7 @@ section {
     color: white;    
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    justify-content: center;
     max-width: 8rem;
 }
 .button_one:hover{
@@ -76,6 +76,7 @@ section {
     background-color: white;
     display: flex;
     align-items: center;
+    justify-content: center;
     max-width: 8rem;
     border: 1px solid var(--darkgrey);
 }
@@ -102,6 +103,9 @@ section {
     display: flex;
     align-items: center;
 }
+.pre-header {
+    color: var(--steelgrey);
+}
 .header {
     display: flex;
     justify-content: space-between;
@@ -125,8 +129,15 @@ section {
     border: 10px solid black;
     border-radius: 500px;
 }
-.tea_image {
-    max-width: 250px;
+.tea_icon {
+    max-width: 60px;
+    max-height: fit-content;
+}
+.header_links {
+    display: flex;
+}
+.header_links > a {
+    margin-right: 2rem;
 }
 
 /* about */
