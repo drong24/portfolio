@@ -46,7 +46,7 @@ section {
 }
 /* reused styling */
 .button_one {
-    padding: 8px;
+    padding: .65rem 1.5rem .65rem 1.5rem;
     border-radius: 8px;
     border: none;
     font-size: 12pt;
@@ -56,7 +56,6 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 8rem;
 }
 .button_one:hover{
     cursor: pointer;
@@ -69,7 +68,7 @@ section {
     margin-right: 12px;
 }
 .button_two {
-    padding: 8px;
+    padding: .65rem 1.5rem .65rem 1.5rem;
     border-radius: 8px;
     font-size: 12pt;
     font-weight: 900;
@@ -77,7 +76,6 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 8rem;
     border: 1px solid var(--darkgrey);
 }
 .button_two:hover{
@@ -96,26 +94,30 @@ section {
 }
 
 /* header */
-.link_img {
-    width: 35px;
-}
-.resume_link {
-    display: flex;
-    align-items: center;
-}
-.pre-header {
-    color: var(--steelgrey);
-}
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 1.5%;
-    margin-bottom: 50px;
-    width: 97%;
+    align-items: center;
+    gap: 20%;
+    margin-top: 1.5rem;
+}
+.tea_icon {
+    padding: 6px;
+    border: 3px solid black;
+    border-radius: 15px;
+    width: 60px;
+}
+.link_img {
+    max-width: 35px;
+}
+
+/* frontpage */
+.pre-header {
+    color: var(--steelgrey);
 }
 #frontpage {
     display: flex;
-    min-height: 55vh;
+    min-height: 75vh;
     align-items: center;
     justify-content: space-around;
 }
@@ -128,10 +130,6 @@ section {
     max-height: fit-content;
     border: 10px solid black;
     border-radius: 500px;
-}
-.tea_icon {
-    max-width: 60px;
-    max-height: fit-content;
 }
 .header_links {
     display: flex;
@@ -152,8 +150,8 @@ section {
 }
 .nav {
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 50px;
+    justify-content: space-between;
+    flex: 1 0 0;
 }
 .nav_a {
     padding: 5px;
