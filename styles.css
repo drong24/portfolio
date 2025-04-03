@@ -320,7 +320,6 @@ section {
     transition: all .5s;
 }
 .project:hover {
-    border: 4px solid var(--highlight);
     box-shadow: 12px 12px 2px 1px var(--lightgrey);
     translate: -0.35em -0.35em;
 }
